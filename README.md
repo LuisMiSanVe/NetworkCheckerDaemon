@@ -1,5 +1,5 @@
 > [See in spanish/Ver en español](https://github.com/LuisMiSanVe/NetworkCheckerDaemon/blob/main/README.es.md)
-# <img src="https://github.com/LuisMiSanVe/NetworkCheckerDaemon/blob/main/NetworkCheckerDaemon/Resources/icon.png" width="40" alt="NetworkCheckerDaemon Logo"> Network Checker Daemon
+# <img src="https://github.com/LuisMiSanVe/NetworkCheckerDaemon/blob/main/NetworkCheckerDaemon/Resources/icon.ico" width="40" alt="NetworkCheckerDaemon Logo"> Network Checker Daemon
 [![image](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)](https://dotnet.microsoft.com/en-us/languages/csharp)
 [![image](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)](https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet)
 [![image](https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual%20studio&logoColor=white)](https://visualstudio.microsoft.com/)

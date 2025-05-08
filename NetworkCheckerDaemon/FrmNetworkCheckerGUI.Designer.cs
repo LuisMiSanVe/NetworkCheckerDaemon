@@ -80,8 +80,9 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FrmNetworkCheckerGUI";
-            Text = "Form1";
+            Text = "Network Checker GUI";
             FormClosing += FrmNetworkCheckerGUI_FormClosing;
             cntxmnustpOptions.ResumeLayout(false);
             cntxmnustpOptions.PerformLayout();

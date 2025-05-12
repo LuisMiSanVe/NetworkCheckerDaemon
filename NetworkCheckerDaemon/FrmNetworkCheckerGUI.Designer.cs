@@ -33,14 +33,18 @@
             tmrCheck = new System.Windows.Forms.Timer(components);
             ntficnTaskbarCheck = new NotifyIcon(components);
             cntxmnustpOptions = new ContextMenuStrip(components);
-            toolStripTextBox1 = new ToolStripTextBox();
+            tlstrptxtbx_StatusLabel = new ToolStripTextBox();
+            tlstrptxtbx_Status = new ToolStripTextBox();
             toolStripSeparator1 = new ToolStripSeparator();
-            closeToolStripMenuItem = new ToolStripMenuItem();
+            tlstrpmnuitm_HideShow = new ToolStripMenuItem();
+            tlstrpmnuitm_Close = new ToolStripMenuItem();
             cntxmnustpOptions.SuspendLayout();
             SuspendLayout();
             // 
             // tmrCheck
             // 
+            tmrCheck.Enabled = true;
+            tmrCheck.Interval = 1000;
             tmrCheck.Tick += tmrCheck_Tick;
             // 
             // ntficnTaskbarCheck
@@ -53,27 +57,40 @@
             // cntxmnustpOptions
             // 
             cntxmnustpOptions.ImageScalingSize = new Size(24, 24);
-            cntxmnustpOptions.Items.AddRange(new ToolStripItem[] { toolStripTextBox1, toolStripSeparator1, closeToolStripMenuItem });
+            cntxmnustpOptions.Items.AddRange(new ToolStripItem[] { tlstrptxtbx_StatusLabel, tlstrptxtbx_Status, toolStripSeparator1, tlstrpmnuitm_HideShow, tlstrpmnuitm_Close });
             cntxmnustpOptions.Name = "cntxmnustpOptions";
-            cntxmnustpOptions.Size = new Size(161, 77);
+            cntxmnustpOptions.Size = new Size(226, 144);
             // 
-            // toolStripTextBox1
+            // tlstrptxtbx_StatusLabel
             // 
-            toolStripTextBox1.Name = "toolStripTextBox1";
-            toolStripTextBox1.Size = new Size(100, 31);
-            toolStripTextBox1.Text = "A";
+            tlstrptxtbx_StatusLabel.Enabled = false;
+            tlstrptxtbx_StatusLabel.Name = "tlstrptxtbx_StatusLabel";
+            tlstrptxtbx_StatusLabel.Size = new Size(150, 31);
+            tlstrptxtbx_StatusLabel.Text = "Network Status:";
+            // 
+            // tlstrptxtbx_Status
+            // 
+            tlstrptxtbx_Status.Name = "tlstrptxtbx_Status";
+            tlstrptxtbx_Status.Size = new Size(150, 31);
             // 
             // toolStripSeparator1
             // 
             toolStripSeparator1.Name = "toolStripSeparator1";
-            toolStripSeparator1.Size = new Size(157, 6);
+            toolStripSeparator1.Size = new Size(222, 6);
             // 
-            // closeToolStripMenuItem
+            // tlstrpmnuitm_HideShow
             // 
-            closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            closeToolStripMenuItem.Size = new Size(160, 32);
-            closeToolStripMenuItem.Text = "Close";
-            closeToolStripMenuItem.Click += closeToolStripMenuItem_Click;
+            tlstrpmnuitm_HideShow.Name = "tlstrpmnuitm_HideShow";
+            tlstrpmnuitm_HideShow.Size = new Size(225, 32);
+            tlstrpmnuitm_HideShow.Text = "Hide Detailed GUI";
+            tlstrpmnuitm_HideShow.Click += tlstrpmnuitm_HideShow_Click;
+            // 
+            // tlstrpmnuitm_Close
+            // 
+            tlstrpmnuitm_Close.Name = "tlstrpmnuitm_Close";
+            tlstrpmnuitm_Close.Size = new Size(225, 32);
+            tlstrpmnuitm_Close.Text = "Close";
+            tlstrpmnuitm_Close.Click += tlstrpmnuitm_Close_Click;
             // 
             // FrmNetworkCheckerGUI
             // 
@@ -94,8 +111,10 @@
         private System.Windows.Forms.Timer tmrCheck;
         private NotifyIcon ntficnTaskbarCheck;
         private ContextMenuStrip cntxmnustpOptions;
-        private ToolStripTextBox toolStripTextBox1;
+        private ToolStripTextBox tlstrptxtbx_StatusLabel;
         private ToolStripSeparator toolStripSeparator1;
-        private ToolStripMenuItem closeToolStripMenuItem;
+        private ToolStripMenuItem tlstrpmnuitm_Close;
+        private ToolStripTextBox tlstrptxtbx_Status;
+        private ToolStripMenuItem tlstrpmnuitm_HideShow;
     }
 }

@@ -15,8 +15,11 @@ The host that the `PING` attacks is customizable, by default it uses Google's DN
 
 Any network problem or disruption will be notified to the user, with the option to stop recieving these notifications.
 
+> [!IMPORTANT]
+> Be aware that if you keep it running in the background executing `PING` commands for a long time, it can overload network traffic, potentially causing the host you're targeting to block your connection. Therefore, it should be used periodically or occasionally, but never constantly..
+
 ## 🛠️ Setup
-Download the executable from the [Github Releases](https://github.com/LuisMiSanVe/NetworkCheckerDaemon/releases) and add it to the Windows startup programs so it opens automaticly.
+Download the executable from the [Github Releases](https://github.com/LuisMiSanVe/NetworkCheckerDaemon/releases) and run it.
 
 ## 🚀 Releases
 The version will be released using these versioning policies:\

@@ -11,9 +11,9 @@ The program runs a `PING` command to check the accessibility of your network.
 
 While is running, a System Tray Icon appears on the hidden icons section of the Taskbar, where you can monitor, open the detailed window or stop the process.
 
-The `PING` execution rate and the IP it attacks to check is customizable, by default it uses Google's DNS IP (8.8.8.8)
+The host that the `PING` attacks is customizable, by default it uses Google's DNS IP (8.8.8.8)
 
-Any network problem or disruption will be notified to the user.
+Any network problem or disruption will be notified to the user, with the option to stop recieving these notifications.
 
 ## 🛠️ Setup
 Download the executable from the Github Releases and add it to the Windows startup programs so it opens automaticly.

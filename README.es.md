@@ -15,8 +15,11 @@ La dirección a la que ataca el `PING` es configurable, por defecto usa la IP de
 
 Cualquier problema de red o interrupción será notificada al usuario, con la opción de dejar de recibir estas notificaciones.
 
+> [!IMPORTANT]
+> Ten en cuenta que tenerlo de fondo todo el rato ejecutando comandos `PING` puede sobrecargar el tráfico de red, con la posible consecuencia que la dirección a la que ataca decida bloquear la conexión, por lo que debe usarse de forma periodica o puntual pero nunca constante.
+
 ## 🛠️ Instalación
-Descarga el ejecutable desde los [Lanzamientos de Github](https://github.com/LuisMiSanVe/NetworkCheckerDaemon/releases) y añadelo en los programas de inicio de Windows para que se abra automaticamente.
+Descarga el ejecutable desde los [Lanzamientos de Github](https://github.com/LuisMiSanVe/NetworkCheckerDaemon/releases) y ejecutalo.
 
 ## 🚀 Lanzamientos
 Una versión será lanzada solo cuando se cumplan los siguientes puntos:\

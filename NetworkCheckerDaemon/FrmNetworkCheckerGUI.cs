@@ -13,6 +13,7 @@ namespace NetworkCheckerDaemon
 
         private void tmrCheck_Tick(object sender, EventArgs e)
         {
+            string statusText = "";
             try
             {
                 Ping pingHost = new Ping();
@@ -48,12 +49,16 @@ namespace NetworkCheckerDaemon
                         lbl_StatusValue.ForeColor = Color.Black;
                         break;
                 }
-
-                string statusText = "";
                 if (reply.Status.ToString().Equals("Success"))
                     statusText = "Accessible";
                 else
+                {
                     statusText = "Not accessible";
+                    statusIcon = "";
+                    tlstrptxtbx_Status.ForeColor = Color.Red;
+                    lbl_StatusValue.ForeColor = Color.Red;
+                    throw new Exception(statusText);
+                }
                 
                 // Show the data
                 tlstrptxtbx_Status.Text = statusIcon + statusText;
@@ -80,14 +85,17 @@ namespace NetworkCheckerDaemon
                 if (showErrorWindow)
                 {
                     btn_StartStop_Click(sender, e);
-                    var result = MessageBox.Show("An unexpected error has occurred, is possible the configured host is not reachable or doesn't exist.\nDo you want a notification to show up and the Daemon to stop each time an error occurs?", ex.Message, MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+                    var result = MessageBox.Show("An error has occurred, is possible the configured host is not reachable or doesn't exist.\nDo you want a notification to show up and the Daemon to stop each time an error occurs? (Refusing to stop the Daemon after an error may cause the program to freeze or slow down)", ex.Message, MessageBoxButtons.YesNo, MessageBoxIcon.Error);
 
                     if (result == DialogResult.No)
                         showErrorWindow = false;
                 }
                 else
                 {
-                    lbl_StatusValue.Text = "An error occurred.";
+                    if (statusText == "")
+                        statusText = "An error occurred";
+                    lbl_StatusValue.Text = statusText;
+                    tlstrptxtbx_Status.Text = statusText;
                 }
             }
         }

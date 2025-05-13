@@ -16,7 +16,7 @@ La dirección a la que ataca el `PING` es configurable, por defecto usa la IP de
 Cualquier problema de red o interrupción será notificada al usuario, con la opción de dejar de recibir estas notificaciones.
 
 ## 🛠️ Instalación
-Descarga el ejecutable desde los Lanzamientos de Github y añadelo en los programas de inicio de Windows para que se abra automaticamente.
+Descarga el ejecutable desde los [Lanzamientos de Github](https://github.com/LuisMiSanVe/NetworkCheckerDaemon/releases) y añadelo en los programas de inicio de Windows para que se abra automaticamente.
 
 ## 🚀 Lanzamientos
 Una versión será lanzada solo cuando se cumplan los siguientes puntos:\
@@ -30,4 +30,5 @@ El número de la versión seguirá este formato: \
 ## 💻 Tecnologías usadas
 - Lenguaje de programación: [C#](https://dotnet.microsoft.com/en-us/languages/csharp)
 - Framework: [.Net](https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet)
+  - [FreeIcons](https://freeicons.io/) (Images)
 - IDE Recomendado: [Visual Studio](https://visualstudio.microsoft.com/) 

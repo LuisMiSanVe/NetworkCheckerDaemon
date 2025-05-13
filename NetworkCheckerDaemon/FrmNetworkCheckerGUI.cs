@@ -135,7 +135,9 @@ namespace NetworkCheckerDaemon
                 tmrCheck.Enabled = false;
                 btn_StartStop.BackgroundImage = imglst_startstop.Images[0];
                 lbl_StatusValue.ForeColor = Color.Black;
+                tlstrptxtbx_Status.ForeColor = Color.Black;
                 lbl_StatusValue.Text = "The Daemon is stopped.";
+                tlstrptxtbx_Status.Text = "The Daemon is stopped.";
                 txtbx_hostValue.Enabled = true;
             }
             else

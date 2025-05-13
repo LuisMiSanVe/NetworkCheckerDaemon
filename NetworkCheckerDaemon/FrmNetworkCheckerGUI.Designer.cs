@@ -56,6 +56,7 @@
             btn_StartStop = new Button();
             btn_Close = new Button();
             imglst_startstop = new ImageList(components);
+            tltp_Help = new ToolTip(components);
             cntxmnustpOptions.SuspendLayout();
             grpbx_Advanced.SuspendLayout();
             SuspendLayout();
@@ -264,6 +265,7 @@
             btn_StartStop.Name = "btn_StartStop";
             btn_StartStop.Size = new Size(30, 30);
             btn_StartStop.TabIndex = 10;
+            tltp_Help.SetToolTip(btn_StartStop, "Start or Stop the Daemon");
             btn_StartStop.UseVisualStyleBackColor = true;
             btn_StartStop.Click += btn_StartStop_Click;
             // 
@@ -275,6 +277,7 @@
             btn_Close.Name = "btn_Close";
             btn_Close.Size = new Size(30, 30);
             btn_Close.TabIndex = 11;
+            tltp_Help.SetToolTip(btn_Close, "Close");
             btn_Close.UseVisualStyleBackColor = true;
             btn_Close.Click += btn_Close_Click;
             // 
@@ -339,5 +342,6 @@
         private Button btn_Close;
         private ImageList imglst_startstop;
         private TextBox txtbx_hostValue;
+        private ToolTip tltp_Help;
     }
 }

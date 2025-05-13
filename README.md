@@ -16,11 +16,11 @@ The host that the `PING` attacks is customizable, by default it uses Google's DN
 Any network problem or disruption will be notified to the user, with the option to stop recieving these notifications.
 
 ## 🛠️ Setup
-Download the executable from the Github Releases and add it to the Windows startup programs so it opens automaticly.
+Download the executable from the [Github Releases](https://github.com/LuisMiSanVe/NetworkCheckerDaemon/releases) and add it to the Windows startup programs so it opens automaticly.
 
 ## 🚀 Releases
 The version will be released using these versioning policies:\
-New major features and critical bug fixes will cause the immediate release of a new version, while other minor changes/fixes will wait one week from the time the change is introduced in the repository before being included in the new version, so that other potential changes can be added.
+New major features and critical bug fixes will cause the immediate release of a new version, while other minor changes or fixes will wait one week since the time the change is introduced in the repository before being included in the new version, so that other potential changes can be added.
 >[!NOTE]
 >These potencial new changes will not increase the wait time for the new version beyond one week.
 
@@ -30,4 +30,6 @@ The version number will follow this format: \
 ## 💻 Technologies Used
 - Programming Language: [C#](https://dotnet.microsoft.com/en-us/languages/csharp)
 - Framework: [.Net](https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet)
+- Other:
+  - [FreeIcons](https://freeicons.io/) (Images)
 - Recommended IDE: [Visual Studio](https://visualstudio.microsoft.com/) 

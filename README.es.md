@@ -11,12 +11,12 @@ El programa corre un comando `PING` para comprobar la accesibilidad de tu conexi
 
 Mientras está en ejecución, un Icono aparecerá en la sección de Iconos Ocultos de la Barra de Tareas, donde puedes comprobar, abrir una ventana con detalles o parar el proceso.
 
-Las veces que se va ejecutando los `PING` y la IP a la que ataca es configurable, por defecto usa la IP del DNS de Google (8.8.8.8)
+La dirección a la que ataca el `PING` es configurable, por defecto usa la IP del DNS de Google (8.8.8.8)
 
-Cualquier problema de red o interrupción será notificada al usuario.
+Cualquier problema de red o interrupción será notificada al usuario, con la opción de dejar de recibir estas notificaciones.
 
 ## 🛠️ Instalación
-Descarga el ejecutable desde los Lanzamientos de Githuby añadelo en los programas de inicio de Windows para que se abra automaticamente.
+Descarga el ejecutable desde los Lanzamientos de Github y añadelo en los programas de inicio de Windows para que se abra automaticamente.
 
 ## 🚀 Lanzamientos
 Una versión será lanzada solo cuando se cumplan los siguientes puntos:\

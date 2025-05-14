@@ -301,6 +301,7 @@
             Controls.Add(lbl_StatusValue);
             Controls.Add(lbl_Status);
             Controls.Add(grpbx_Advanced);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "FrmNetworkCheckerGUI";

@@ -57,6 +57,8 @@
             btn_Close = new Button();
             imglst_startstop = new ImageList(components);
             tltp_Help = new ToolTip(components);
+            tlstrpmnuitm_StartStop = new ToolStripMenuItem();
+            toolStripSeparator2 = new ToolStripSeparator();
             cntxmnustpOptions.SuspendLayout();
             grpbx_Advanced.SuspendLayout();
             SuspendLayout();
@@ -77,9 +79,9 @@
             // cntxmnustpOptions
             // 
             cntxmnustpOptions.ImageScalingSize = new Size(24, 24);
-            cntxmnustpOptions.Items.AddRange(new ToolStripItem[] { tlstrptxtbx_StatusLabel, tlstrptxtbx_Status, toolStripSeparator1, tlstrpmnuitm_HideShow, tlstrpmnuitm_Close });
+            cntxmnustpOptions.Items.AddRange(new ToolStripItem[] { tlstrptxtbx_StatusLabel, tlstrptxtbx_Status, toolStripSeparator1, tlstrpmnuitm_HideShow, toolStripSeparator2, tlstrpmnuitm_StartStop, tlstrpmnuitm_Close });
             cntxmnustpOptions.Name = "cntxmnustpOptions";
-            cntxmnustpOptions.Size = new Size(226, 144);
+            cntxmnustpOptions.Size = new Size(241, 215);
             // 
             // tlstrptxtbx_StatusLabel
             // 
@@ -96,19 +98,19 @@
             // toolStripSeparator1
             // 
             toolStripSeparator1.Name = "toolStripSeparator1";
-            toolStripSeparator1.Size = new Size(222, 6);
+            toolStripSeparator1.Size = new Size(237, 6);
             // 
             // tlstrpmnuitm_HideShow
             // 
             tlstrpmnuitm_HideShow.Name = "tlstrpmnuitm_HideShow";
-            tlstrpmnuitm_HideShow.Size = new Size(225, 32);
+            tlstrpmnuitm_HideShow.Size = new Size(240, 32);
             tlstrpmnuitm_HideShow.Text = "Hide Detailed GUI";
             tlstrpmnuitm_HideShow.Click += tlstrpmnuitm_HideShow_Click;
             // 
             // tlstrpmnuitm_Close
             // 
             tlstrpmnuitm_Close.Name = "tlstrpmnuitm_Close";
-            tlstrpmnuitm_Close.Size = new Size(225, 32);
+            tlstrpmnuitm_Close.Size = new Size(240, 32);
             tlstrpmnuitm_Close.Text = "Close";
             tlstrpmnuitm_Close.Click += tlstrpmnuitm_Close_Click;
             // 
@@ -279,7 +281,7 @@
             btn_Close.TabIndex = 11;
             tltp_Help.SetToolTip(btn_Close, "Close");
             btn_Close.UseVisualStyleBackColor = true;
-            btn_Close.Click += btn_Close_Click;
+            btn_Close.Click += tlstrpmnuitm_Close_Click;
             // 
             // imglst_startstop
             // 
@@ -288,6 +290,18 @@
             imglst_startstop.TransparentColor = Color.Transparent;
             imglst_startstop.Images.SetKeyName(0, "buttonStart.png");
             imglst_startstop.Images.SetKeyName(1, "buttonStop.png");
+            // 
+            // tlstrpmnuitm_StartStop
+            // 
+            tlstrpmnuitm_StartStop.Name = "tlstrpmnuitm_StartStop";
+            tlstrpmnuitm_StartStop.Size = new Size(240, 32);
+            tlstrpmnuitm_StartStop.Text = "Stop Daemon";
+            tlstrpmnuitm_StartStop.Click += btn_StartStop_Click;
+            // 
+            // toolStripSeparator2
+            // 
+            toolStripSeparator2.Name = "toolStripSeparator2";
+            toolStripSeparator2.Size = new Size(237, 6);
             // 
             // FrmNetworkCheckerGUI
             // 
@@ -344,5 +358,7 @@
         private ImageList imglst_startstop;
         private TextBox txtbx_hostValue;
         private ToolTip tltp_Help;
+        private ToolStripSeparator toolStripSeparator2;
+        private ToolStripMenuItem tlstrpmnuitm_StartStop;
     }
 }

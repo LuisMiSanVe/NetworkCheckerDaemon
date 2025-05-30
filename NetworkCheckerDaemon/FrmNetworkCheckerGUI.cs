@@ -131,11 +131,6 @@ namespace NetworkCheckerDaemon
             this.Close();
         }
 
-        private void btn_Close_Click(object sender, EventArgs e)
-        {
-            tlstrpmnuitm_Close_Click(sender,e);
-        }
-
         private void btn_StartStop_Click(object sender, EventArgs e)
         {
             if (tmrCheck.Enabled)
@@ -147,6 +142,7 @@ namespace NetworkCheckerDaemon
                 lbl_StatusValue.Text = "The Daemon is stopped.";
                 tlstrptxtbx_Status.Text = "The Daemon is stopped.";
                 txtbx_hostValue.Enabled = true;
+                tlstrpmnuitm_StartStop.Text = "Start Daemon";
             }
             else
             {
@@ -155,6 +151,7 @@ namespace NetworkCheckerDaemon
                 lbl_StatusValue.ForeColor = Color.Black;
                 lbl_StatusValue.Text = "Scanning...";
                 txtbx_hostValue.Enabled = false;
+                tlstrpmnuitm_StartStop.Text = "Stop Daemon";
             }
         }
     }

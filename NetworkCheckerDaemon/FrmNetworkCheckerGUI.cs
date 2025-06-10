@@ -129,6 +129,8 @@ namespace NetworkCheckerDaemon
                             if (result == DialogResult.No)
                                 showErrorWindow = false;
                         }
+                        else
+                            this.Invoke(() => { tmrCheck.Enabled = true; });
                     });
                 }
             }).Start();

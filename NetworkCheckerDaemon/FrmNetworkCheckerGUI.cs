@@ -92,7 +92,7 @@ namespace NetworkCheckerDaemon
                             }
                         });
                     }
-                    else // PING fail
+                    else if (!txtbx_hostValue.Enabled) // PING fail
                     {
                         statusText = "Not accessible";
                         this.Invoke(() =>
@@ -109,7 +109,13 @@ namespace NetworkCheckerDaemon
                             throw new Exception(statusText);
                         });
                     }
-                    this.Invoke(() => { tmrCheck.Enabled = true; });
+                    else
+                    {
+                        tlstrptxtbx_Status.ForeColor = Color.Black;
+                        lbl_StatusValue.ForeColor = Color.Black;
+                    }
+
+                    this.Invoke(() => { if (!txtbx_hostValue.Enabled) tmrCheck.Enabled = true; });
                 }
                 catch (Exception ex)
                 {
@@ -130,7 +136,7 @@ namespace NetworkCheckerDaemon
                                 showErrorWindow = false;
                         }
                         else
-                            this.Invoke(() => { tmrCheck.Enabled = true; });
+                            this.Invoke(() => { if (!txtbx_hostValue.Enabled) tmrCheck.Enabled = true; });
                     });
                 }
             }).Start();

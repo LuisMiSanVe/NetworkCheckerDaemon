@@ -7,6 +7,15 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationIcon>Resources\icon.ico</ApplicationIcon>
+    <SignAssembly>False</SignAssembly>
+    <Title>NetworkCheckerDaemon</Title>
+    <Version>1.3.2</Version>
+    <Authors>LuisMiSanVe</Authors>
+    <Company>LuisMiSanVe</Company>
+    <PackageProjectUrl>https://github.com/LuisMiSanVe/NetworkCheckerDaemon</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/LuisMiSanVe/NetworkCheckerDaemon</RepositoryUrl>
+    <AssemblyVersion>1.3.2</AssemblyVersion>
+    <FileVersion>1.3.2</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
